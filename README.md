@@ -12,22 +12,20 @@ This project is a Flask API that returns the current local time of a world capit
 Call the API:
 Open a terminal and run the following command, replacing {city} with your chosen world capital:
 
-_curl -H "Authorization: Bearer supersecrettoken123" http://34.69.215.169:5001/api/current-time/{city}
-_
+curl -H "Authorization: Bearer supersecrettoken123" http://34.69.215.169:5001/api/current-time/{city}
 
 For example:
-_curl -H "Authorization: Bearer supersecrettoken123" http://34.69.215.169:5001/api/current-time/madrid
-_
+curl -H "Authorization: Bearer supersecrettoken123" http://34.69.215.169:5001/api/current-time/madrid
 
 Response:
 The API will return the current local time for the specified capital city in the following format:
 
-_{
+{
   "abbreviation": "CET",
   "city": "Madrid",
   "local_time": "2025-04-22 01:08:14",
   "utc_offset": "UTC+01:00"
-}_
+}
 
 # Requirements
 - Python
